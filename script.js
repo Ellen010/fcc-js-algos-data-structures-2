@@ -1,11 +1,12 @@
 // Function A
 function getAverage(scores) {
- let sum=0;
-for (let i=0; i<scores.length; i++) {
-  sum=sum+scores[i];
-}
-let average=sum/(scores.length);
-return average;
+  let sum = 0;
+
+  for (const score of scores) {
+    sum += score;
+  }
+
+  return sum / scores.length;
 }
 
 // Function B
