@@ -27,8 +27,13 @@ function getGrade(score) {
 }
 
 // Function C
-
-
+function hasPassingGrade(score) {
+  if (score>=60) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
