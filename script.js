@@ -10,7 +10,6 @@ function getAverage(scores) {
 }
 
 // Function B
-
 function getGrade(score) {
   if (score === 100) {
     return "A++";
@@ -29,13 +28,10 @@ function getGrade(score) {
 
 // Function C
 function hasPassingGrade(score) {
-  if (score>=60) {
-    return true;
-  } else {
-    return false;
-  }
+  return getGrade(score) !== "F";
 }
 
+function studentMsg(totalScores, studentScore) {
 
-console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
-console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));
+}
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
